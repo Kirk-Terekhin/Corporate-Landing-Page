@@ -1,0 +1,28 @@
+=h($size,$weight,$letter,$line,$m-bottom)
+    font-size: $size
+    font-weight: $weight
+    letter-spacing: $letter
+    line-height: $line
+    margin-bottom: $m-bottom
+
+=padding-Y($top, $bottom)
+    padding-top: $top + rem
+    padding-bottom: $bottom + rem
+    @media screen and (max-width: 1200px)
+        padding-top: $top - ($top / 3) + rem
+        padding-bottom: $bottom - ($bottom / 3) + rem
+    // @media screen and (max-width:  992px)
+    //     padding-top: ($top / 2) + rem
+    //     padding-bottom: ($bottom / 2) + rem
+    @media screen and (max-width: 768px)
+        padding-top: $top / 2 + rem
+        padding-bottom: $bottom / 2 + rem
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content

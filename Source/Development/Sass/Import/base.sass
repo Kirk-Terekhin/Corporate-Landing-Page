@@ -1,0 +1,84 @@
+html
+    font-size: 16px !important
+body
+    font-family: 'Exo', sans-serif !important
+    font-weight: 500
+    color: $text-color
+img
+    max-width: 100%
+header,
+footer,
+section
+    padding-top: 7rem
+    padding-bottom: 5rem
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+a:hover
+    color: $red
+a.button:focus
+    text-decoration: none
+    color: $white
+.h1,.h2,.h3,.h4,.h5,.h6,.p
+    margin-top: 0
+    margin-bottom: 0
+    .pretitle
+        +h(1rem, inherit, 0.2rem, 2rem, 0)
+        text-transform: uppercase
+        color: $red-light
+.h1
+    +h(3.75rem, 100, 0.15rem, 4.7rem, 2.52rem)
+.h2
+    +h(2.5rem, 500, 0.1rem, 3.1rem, 2.6rem)
+.h4
+    +h(1.4rem, 500, 0.04rem, inherit, 0.4rem)
+.p
+    +h(1rem, 500, 0.04rem, 1.64rem, 1.6rem)
+.title__dots
+    color: $red-light
+input,
+.button
+    text-transform: uppercase
+    font-weight: 400
+    font-size: 1rem
+    border-radius: 0.17rem
+    outline: none
+input
+    color:  $iput-color
+    background-color: $input-bg
+    border: 1px solid $input-border
+    letter-spacing: 0.04rem
+    line-height: 3rem
+    padding: 0 1.7rem
+    +placeholder
+        color: $iput-color
+.button,.botton:focus
+    display: inline-block
+    text-decoration: none
+    color: $white
+    background-color: $red-light
+    border: 1px solid $red-light
+    letter-spacing: 0.2rem
+    padding: 0.8rem 1.5rem
+    text-align: center
+    box-shadow: 1px 3px 5px 0px $shadow
+    &:hover
+        color: $white
+        text-decoration: none
+        background-color: $red
+        border-color: $red-dark
+    &:active
+        background-color: $red-dark
+.input-group
+    width: 100%
+    position: relative
+    input
+        width: 100%
+        z-index: 99
+    .submit-right
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        z-index: 100

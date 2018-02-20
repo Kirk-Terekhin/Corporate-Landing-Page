@@ -1,0 +1,14 @@
+{
+  "name": "ragnarok",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ragnarok <deathmetalldrummer@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7"
+  }
+}
